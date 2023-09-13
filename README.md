@@ -106,7 +106,7 @@ In Xcode, go to **`Product > Scheme > Manage Schemes`** and update the schema na
 Install pod dependencies for iOS by running:
 
 ```bash
-npx pod-install iosyarn run start
+npx pod-install ios
 ```
 
 ### **Step 7: Start Metro Server**
@@ -128,3 +128,51 @@ yarn run ios
 Now, your React Native project is up and running with the configured environment settings. Happy coding!
 
 ## Customize Font
+
+Enhance the visual appeal of your React Native project by adding custom fonts. Follow these steps to integrate your preferred font family into the template:
+
+### **Step 1: Download Font Family**
+
+Download your preferred font family from Google Fonts or other font providers. Ensure that you have the necessary .ttf font files.
+
+### **Step 2: Replace Default Fonts**
+
+Navigate to the **`assets/fonts`** directory in your project and replace the default .ttf files with your downloaded font family .ttf files.
+
+### **Step 3: Link Font Assets**
+
+Open your terminal in the root directory of your project and run the following command to link the font assets:
+
+```bash
+npx react-native-asset
+```
+
+### **Step 4: Configure Fonts for iOS**
+
+For iOS, follow these additional steps:
+
+- Open Xcode and navigate to your project's **`ios`** folder.
+- In Xcode, select all the font .ttf files that you placed in the **`assets/fonts`** directory under the "Resources" folder.
+- In the right panel, tick the checkbox for all four targets to ensure that the fonts are included in the build.
+
+### **Step 5: Update Font Configuration**
+
+Navigate to **`src/theme/config.ts`** in your project and locate the default font family name. Change it to your preferred font family name.
+
+### **Step 6: Start the Metro Server**
+
+Start the Metro server by running the following command:
+
+```bash
+yarn run start
+```
+
+### **Step 7: Rebuild the Project**
+
+Open another terminal window and rebuild the project to apply the font changes:
+
+```bash
+yarn run ios
+```
+
+Your React Native project is now configured with your custom font family, giving your app a unique and personalized look. Enjoy the enhanced typography in your application!
