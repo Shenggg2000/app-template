@@ -1,79 +1,132 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Template
 
-# Getting Started
+Welcome to the React Native Template with Environment Configuration! We're thrilled to introduce you to a streamlined way to kickstart your React Native projects, tailored for different Software Development Life Cycle (SDLC) phases. Whether you're a seasoned developer or just getting started, this template is designed to simplify your workflow and make your app development process smoother and more efficient.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+---
 
-## Step 1: Start the Metro Server
+## **Key Features**
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **Environment Isolation:** Easily switch between different SDLC phases by selecting the appropriate environment file. No more manual configuration changes – simply update your environment file, and you're ready to go.
+- **Effortless Setup:** Get started quickly with our template by cloning the repository and following the straightforward setup instructions. We've done the heavy lifting so you can focus on building your app.
+- **********************************NPM scripts ready:********************************** This template comes with pre-configured npm scripts that simplify common development tasks such as building in different environments and running your React Native application.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+---
+
+## Libraries Used
+
+- **[React Navigation](https://reactnavigation.org/) -** Routing and navigation for Expo and React Native apps
+- **[Async Storage](https://react-native-async-storage.github.io/async-storage/) -** Data storage system for React Native
+- **[Axios](https://axios-http.com/docs/intro) -** Promise based HTTP client for the browser and node.js
+- **[Native Base](https://docs.nativebase.io/)** - Accessible, utility-first component library for Android, iOS and Web
+- **[React Native Config](https://github.com/luggit/react-native-config) -** Module to expose config variables to your javascript code in React Native
+- **[React Native Rename](https://github.com/junedomingo/react-native-rename) -** Rename react-native app with just one command
+- **[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons) -** Customizable Icons for React Native
+- **[Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) -** A small, fast, and scalable bearbones state management solution
+
+---
+
+## Get Started
+
+Follow these steps to set up and run your React Native project with our template:
+
+### **Prerequisites**
+
+Before you begin, ensure you have the following prerequisites installed:
+
+- **[Node.js](https://nodejs.org/en/)**
+- **[Yarn](https://classic.yarnpkg.com/en/docs/install)**
+- **[Xcode](https://developer.apple.com/xcode/)** (for iOS development)
+
+### **Step 1: Clone the Repository**
+
+Clone the template repository to your local machine using the following command:
 
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+$ git clone https://github.com/Shenggg2000/app-template.git
 ```
 
-## Step 2: Start your Application
+### **Step 2: Navigate to the Project Folder**
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+Move into the project folder using the following command:
 
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+cd app-template
 ```
 
-### For iOS
+### **Step 3: Install Dependencies**
+
+Install project dependencies using Yarn:
 
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+yarn install
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### **Step 4: Rename the App**
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Use the following command to rename the app to your preferred name. Replace **`"yourappname"`** with your desired app name:
 
-## Step 3: Modifying your App
+```bash
+npx react-native-rename "yourappname" --skipGitStatusCheck
+```
 
-Now that you have successfully run the app, let's modify it.
+### **Step 5: Configure iOS Settings**
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+### **Step 5.1: Open the iOS Project in Xcode**
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+Navigate to the **`app-template/ios`** folder and open the Xcode project.
 
-## Congratulations! :tada:
+### **Step 5.2: Update AppDelegate.mm**
 
-You've successfully run and modified your React Native App. :partying_face:
+In the project structure, open **`yourappname/yourappname/AppDelegate.mm`** and change the code on line 9 from:
 
-### Now what?
+```objectivec
+self.module = @"MyApp";
+```
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+to:
 
-# Troubleshooting
+```objectivec
+self.module = @"yourappname";
+```
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+### Step 5.3: Update Info.plist
 
-# Learn More
+In the project structure, open **`yourappname/yourappname/Info.plist`** and change the "Bundle display name" value to **`${PRODUCT_NAME}`**.
 
-To learn more about React Native, take a look at the following resources:
+### Step 5.4: Update Schemas
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+In Xcode, go to **`Product > Scheme > Manage Schemes`** and update the schema names as follows:
+
+- Change 'MyApp-DEV' to 'yourappname-DEV'
+- Change 'MyApp-QA' to 'yourappname-QA'
+- Change 'MyApp-UAT' to 'yourappname-UAT'
+
+### **Step 6: Install Pod Dependencies**
+
+Install pod dependencies for iOS by running:
+
+```bash
+npx pod-install iosyarn run start
+```
+
+### **Step 7: Start Metro Server**
+
+Start the Metro server by running:
+
+```bash
+yarn run start
+```
+
+### **Step 8: Build and Run the App**
+
+Open another terminal window and build the project in the development environment:
+
+```bash
+yarn run ios
+```
+
+Now, your React Native project is up and running with the configured environment settings. Happy coding!
+
+---
+
+## Customize Font
