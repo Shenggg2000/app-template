@@ -131,11 +131,8 @@
 		86C50F406BAB4C269871D152 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-MyApp-MyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MyAppTests.release.xcconfig"; path = "Target Support Files/Pods-MyApp-MyAppTests/Pods-MyApp-MyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		8BD3FF3F2AAFF392007ED7F2 /* MyApp-DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp-DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BD3FF402AAFF392007ED7F2 /* MyApp DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyApp DEV-Info.plist"; path = "/Users/yousheng/Desktop/React-Native/MyApp/ios/MyApp DEV-Info.plist"; sourceTree = "<absolute>"; };
 		8BD3FF522AAFF3A2007ED7F2 /* MyApp-QA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp-QA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BD3FF532AAFF3A2007ED7F2 /* MyApp QA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyApp QA-Info.plist"; path = "/Users/yousheng/Desktop/React-Native/MyApp/ios/MyApp QA-Info.plist"; sourceTree = "<absolute>"; };
 		8BD3FF652AAFF3BD007ED7F2 /* MyApp-UAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp-UAT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BD3FF662AAFF3BE007ED7F2 /* MyApp UAT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyApp UAT-Info.plist"; path = "/Users/yousheng/Desktop/React-Native/MyApp/ios/MyApp UAT-Info.plist"; sourceTree = "<absolute>"; };
 		90AF8277B6E474E29D770E6B /* libPods-MyApp-MyApp-DEV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyApp-MyApp-DEV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9779093DCC684975B32A4D70 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		B0C94BB7B71C4293C6A156D1 /* libPods-MyApp-MyApp-QA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyApp-MyApp-QA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,9 +272,6 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				8BD3FF402AAFF392007ED7F2 /* MyApp DEV-Info.plist */,
-				8BD3FF532AAFF3A2007ED7F2 /* MyApp QA-Info.plist */,
-				8BD3FF662AAFF3BE007ED7F2 /* MyApp UAT-Info.plist */,
 				3A8F389BD9054C80BBFF8E57 /* Resources */,
 			);
 			indentWidth = 2;
@@ -1155,7 +1149,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "MyApp DEV-Info.plist";
+				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1181,7 +1175,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "MyApp DEV-Info.plist";
+				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1207,7 +1201,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "MyApp QA-Info.plist";
+				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1233,7 +1227,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "MyApp QA-Info.plist";
+				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1259,7 +1253,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "MyApp UAT-Info.plist";
+				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1285,7 +1279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "MyApp UAT-Info.plist";
+				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
