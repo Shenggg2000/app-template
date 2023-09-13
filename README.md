@@ -2,15 +2,11 @@
 
 Welcome to the React Native Template with Environment Configuration! We're thrilled to introduce you to a streamlined way to kickstart your React Native projects, tailored for different Software Development Life Cycle (SDLC) phases. Whether you're a seasoned developer or just getting started, this template is designed to simplify your workflow and make your app development process smoother and more efficient.
 
----
-
 ## **Key Features**
 
 - **Environment Isolation:** Easily switch between different SDLC phases by selecting the appropriate environment file. No more manual configuration changes – simply update your environment file, and you're ready to go.
 - **Effortless Setup:** Get started quickly with our template by cloning the repository and following the straightforward setup instructions. We've done the heavy lifting so you can focus on building your app.
 - **********************************NPM scripts ready:********************************** This template comes with pre-configured npm scripts that simplify common development tasks such as building in different environments and running your React Native application.
-
----
 
 ## Libraries Used
 
@@ -22,8 +18,6 @@ Welcome to the React Native Template with Environment Configuration! We're thril
 - **[React Native Rename](https://github.com/junedomingo/react-native-rename) -** Rename react-native app with just one command
 - **[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons) -** Customizable Icons for React Native
 - **[Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) -** A small, fast, and scalable bearbones state management solution
-
----
 
 ## Get Started
 
@@ -77,6 +71,8 @@ Navigate to the **`app-template/ios`** folder and open the Xcode project.
 
 ### **Step 5.2: Update AppDelegate.mm**
 
+![docs-1.jpeg](./assets/images/docs-1.jpeg)
+
 In the project structure, open **`yourappname/yourappname/AppDelegate.mm`** and change the code on line 9 from:
 
 ```objectivec
@@ -91,9 +87,13 @@ self.module = @"yourappname";
 
 ### Step 5.3: Update Info.plist
 
+![docs-2.jpg](./assets/images/docs-2.jpg)
+
 In the project structure, open **`yourappname/yourappname/Info.plist`** and change the "Bundle display name" value to **`${PRODUCT_NAME}`**.
 
 ### Step 5.4: Update Schemas
+
+![docs-3.jpg](./assets/images/docs-3.jpg)
 
 In Xcode, go to **`Product > Scheme > Manage Schemes`** and update the schema names as follows:
 
@@ -126,7 +126,5 @@ yarn run ios
 ```
 
 Now, your React Native project is up and running with the configured environment settings. Happy coding!
-
----
 
 ## Customize Font
