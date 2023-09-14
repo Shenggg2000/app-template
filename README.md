@@ -85,21 +85,11 @@ to:
 self.module = @"yourappname";
 ```
 
-### Step 5.3: Update Info.plist
+### Step 5.3: Update Info.plist (Optional)
 
 ![docs-2.jpg](./assets/images/docs-2.jpg)
 
 In the project structure, open **`yourappname/yourappname/Info.plist`** and change the "Bundle display name" value to **`${PRODUCT_NAME}`**.
-
-### Step 5.4: Update Schemas
-
-![docs-3.jpg](./assets/images/docs-3.jpg)
-
-In Xcode, go to **`Product > Scheme > Manage Schemes`** and update the schema names as follows:
-
-- Change 'MyApp-DEV' to 'yourappname-DEV'
-- Change 'MyApp-QA' to 'yourappname-QA'
-- Change 'MyApp-UAT' to 'yourappname-UAT'
 
 ### **Step 6: Install Pod Dependencies**
 
