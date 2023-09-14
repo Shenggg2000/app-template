@@ -63,33 +63,26 @@ Use the following command to rename the app to your preferred name. Replace **`"
 npx react-native-rename "yourappname" --skipGitStatusCheck
 ```
 
-### **Step 5: Configure iOS Settings**
+### **Step 5 (Optional): Update iOS App Name (If Needed)**
 
-### **Step 5.1: Open the iOS Project in Xcode**
+If you want the app name to include the environment name, follow these steps:
 
-Navigate to the **`app-template/ios`** folder and open the Xcode project.
+- Navigate to **`ios/yourappname/Info.plist`**.
+- Update **CFBundleDisplayName** line 8 from:
 
-### **Step 5.2: Update AppDelegate.mm**
-
-![docs-1.jpeg](./assets/images/docs-1.jpeg)
-
-In the project structure, open **`yourappname/yourappname/AppDelegate.mm`** and change the code on line 9 from:
-
-```objectivec
-self.module = @"MyApp";
+```xml
+<key>CFBundleDisplayName</key>
+<string>yourappname</string>
 ```
 
 to:
 
-```objectivec
-self.module = @"yourappname";
+```xml
+<key>CFBundleDisplayName</key>
+<string>$(PRODUCT_NAME)</string>
 ```
 
-### Step 5.3: Update Info.plist (Optional)
-
-![docs-2.jpg](./assets/images/docs-2.jpg)
-
-In the project structure, open **`yourappname/yourappname/Info.plist`** and change the "Bundle display name" value to **`${PRODUCT_NAME}`**.
+This step is optional and should only be performed if you want to include the environment name in your app's display name.
 
 ### **Step 6: Install Pod Dependencies**
 
