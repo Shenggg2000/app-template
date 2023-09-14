@@ -1,4 +1,4 @@
-import { Center, Button, Divider, Box, Text } from "native-base";
+import { Center, Button, Box, Text } from "native-base";
 import { AppStackScreenProps } from "navigators/StackNavigatorData";
 import Config from "react-native-config";
 
