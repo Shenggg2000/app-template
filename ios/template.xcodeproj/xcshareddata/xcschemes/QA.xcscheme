@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;echo &quot;.env.dev&quot; &gt; /tmp/envfile&#10;">
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;echo &quot;.env.qa&quot; &gt; /tmp/envfile&#10;">
             </ActionContent>
          </ExecutionAction>
       </PreActions>
@@ -23,10 +23,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8BD3FF2E2AAFF392007ED7F2"
-               BuildableName = "MyApp-DEV.app"
-               BlueprintName = "MyApp-DEV"
-               ReferencedContainer = "container:MyApp.xcodeproj">
+               BlueprintIdentifier = "8BD3FF412AAFF3A2007ED7F2"
+               BuildableName = "template-QA.app"
+               BlueprintName = "template-QA"
+               ReferencedContainer = "container:template.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -52,10 +52,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8BD3FF2E2AAFF392007ED7F2"
-            BuildableName = "MyApp-DEV.app"
-            BlueprintName = "MyApp-DEV"
-            ReferencedContainer = "container:MyApp.xcodeproj">
+            BlueprintIdentifier = "8BD3FF412AAFF3A2007ED7F2"
+            BuildableName = "template-QA.app"
+            BlueprintName = "template-QA"
+            ReferencedContainer = "container:template.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -69,10 +69,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8BD3FF2E2AAFF392007ED7F2"
-            BuildableName = "MyApp-DEV.app"
-            BlueprintName = "MyApp-DEV"
-            ReferencedContainer = "container:MyApp.xcodeproj">
+            BlueprintIdentifier = "8BD3FF412AAFF3A2007ED7F2"
+            BuildableName = "template-QA.app"
+            BlueprintName = "template-QA"
+            ReferencedContainer = "container:template.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

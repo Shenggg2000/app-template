@@ -1,5 +1,5 @@
 {
-  "name": "MyApp",
+  "name": "template",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,10 +8,10 @@
     "bundle:qa": "ENVFILE=.env.qa react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "bundle:uat": "ENVFILE=.env.uat react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "android:prod": "cd android && ENVFILE=.env.prod ./gradlew assembleRelease",
-    "ios": "rm -rf ~/Library/Developer/Xcode/DerivedData/MyApp-*/Build/Intermediates.noindex/Pods.build/*/react-native-config.build && react-native run-ios --scheme 'DEV'",
-    "ios:qa": "rm -rf ~/Library/Developer/Xcode/DerivedData/MyApp-*/Build/Intermediates.noindex/Pods.build/*/react-native-config.build && react-native run-ios --scheme 'QA'",
-    "ios:uat": "rm -rf ~/Library/Developer/Xcode/DerivedData/MyApp-*/Build/Intermediates.noindex/Pods.build/*/react-native-config.build && react-native run-ios --scheme 'UAT'",
-    "ios:prod": "rm -rf ~/Library/Developer/Xcode/DerivedData/MyApp-*/Build/Intermediates.noindex/Pods.build/*/react-native-config.build && react-native run-ios",
+    "ios": "rm -rf ~/Library/Developer/Xcode/DerivedData/template-*/Build/Intermediates.noindex/Pods.build/*/react-native-config.build && react-native run-ios --scheme 'DEV'",
+    "ios:qa": "rm -rf ~/Library/Developer/Xcode/DerivedData/template-*/Build/Intermediates.noindex/Pods.build/*/react-native-config.build && react-native run-ios --scheme 'QA'",
+    "ios:uat": "rm -rf ~/Library/Developer/Xcode/DerivedData/template-*/Build/Intermediates.noindex/Pods.build/*/react-native-config.build && react-native run-ios --scheme 'UAT'",
+    "ios:prod": "rm -rf ~/Library/Developer/Xcode/DerivedData/template-*/Build/Intermediates.noindex/Pods.build/*/react-native-config.build && react-native run-ios",
     "lint": "eslint .",
     "test": "jest",
     "postinstall": "patch-package"
