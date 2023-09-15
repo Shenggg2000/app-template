@@ -1,0 +1,11 @@
+{
+  "languages": "Languages",
+  "regions": "Regions",
+  "loading": "Loading",
+  "home": "Home",
+  "info": "Info",
+  "currentEnvironment": "Current Environment: {{env}}",
+  "start": "Start",
+  "loadingOverlay": "Loading Overlay",
+  "greetingDate": "Good day! \nIt's {{date, myDateFormatter }} \nHave a nice day!"
+}

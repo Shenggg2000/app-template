@@ -1,11 +1,12 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import TabNavigator from './TabNavigator';
-import AuthScreen from 'screens/AuthScreen';
 import stackNavigationData, { AppStackParamList } from './StackNavigatorData';
+import { useTranslation } from 'react-i18next';
 
 const Stack = createStackNavigator<AppStackParamList>();
 
 const StackNavigator = () => {
+  const { t } = useTranslation();
+
   return (
     <Stack.Navigator initialRouteName="Auth" screenOptions={{
       headerShown: false

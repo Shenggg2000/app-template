@@ -1,0 +1,11 @@
+{
+  "languages": "语言",
+  "regions": "地区",
+  "loading": "加载中",
+  "home": "主页",
+  "info": "资讯",
+  "currentEnvironment": "当前环境: {{env}}",
+  "start": "开始",
+  "loadingOverlay": "加载覆盖层",
+  "greetingDate": "你好！\n现在是 {{date, myDateFormatter}}\n祝你有愉快的一天！"
+}

@@ -1,10 +1,12 @@
 import useLoadingOverlay from 'hooks/useLoadingOverlay';
 import { Button, Center, Text } from 'native-base'
 import { AppTabScreenProps } from 'navigators/TabNavigatorData'
+import { useTranslation } from 'react-i18next';
 
 interface HelpScreenProps extends AppTabScreenProps<"Help"> {}
 
 const HelpScreen: React.FC<HelpScreenProps> = ({navigation, route}) => {
+  const {t} = useTranslation();
   const loadingOverlay = useLoadingOverlay();
 
   const loadingOverlayHandler = () => {
@@ -17,8 +19,7 @@ const HelpScreen: React.FC<HelpScreenProps> = ({navigation, route}) => {
 
   return (
     <Center width='full' height="full">
-      <Text mb={5}>HelpScreen</Text>
-      <Button onPress={loadingOverlayHandler} >Loading Overlay</Button>
+      <Button onPress={loadingOverlayHandler} >{t('loadingOverlay')}</Button>
     </Center>
   )
 }

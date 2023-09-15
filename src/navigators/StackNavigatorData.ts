@@ -20,11 +20,11 @@ type StackItem = {
 const stackNavigationData: StackItem[] = [
   {
     name: 'Auth',
-    component: AuthScreen,
+    component: AuthScreen
   },
   {
     name: 'HomeTab',
-    component: TabNavigator,
+    component: TabNavigator
   },
 ];
 

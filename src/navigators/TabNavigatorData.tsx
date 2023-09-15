@@ -24,6 +24,8 @@ type TabItem = {
   component: any;
   icon?: React.ReactNode;
   activeIcon?: React.ReactNode;
+  title?: string;
+  titleI18n?: string;
 }
 
 const tabNavigationData: TabItem[] = [
@@ -32,12 +34,16 @@ const tabNavigationData: TabItem[] = [
     component: HomeScreen,
     icon: homeIcon,
     activeIcon: activeHomeIcon,
+    // i18n key
+    titleI18n: 'home'
   },
   {
     name: 'Help',
     component: HelpScreen,
     icon: helpIcon,
     activeIcon: activeHelpIcon,
+    // i18n key
+    titleI18n: 'info'
   },
 ];
 
