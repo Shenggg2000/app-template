@@ -1,6 +1,13 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <CodePush/CodePush.h>
+#import "RNCConfig.h"
+#import <AppCenterReactNativeShared/AppCenterReactNativeShared.h>
+#import <AppCenter/MSACAppCenter.h>
+#import <AppCenterReactNative.h>
+#import <AppCenterReactNativeAnalytics.h>
+#import <AppCenterReactNativeCrashes.h>
 
 @implementation AppDelegate
 
@@ -10,6 +17,12 @@
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
+  NSString *appSecret = [RNCConfig envFor:@"CODE_PUSH_SECRET_IOS"];
+  [AppCenterReactNativeShared setStartAutomatically:YES];
+  [AppCenterReactNativeShared setAppSecret: appSecret];
+  [AppCenterReactNative register];
+  [AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];
+  [AppCenterReactNativeCrashes registerWithAutomaticProcessing];
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
@@ -19,7 +32,7 @@
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
 #else
-  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+  return [CodePush bundleURL];
 #endif
 }
 

@@ -79,10 +79,10 @@ to:
 
 ```xml
 <key>CFBundleDisplayName</key>
-<string>$(PRODUCT_NAME)</string>
+<string>${APP_NAME}</string>
 ```
 
-This step is optional and should only be performed if you want to include the environment name in your app's display name.
+This step is optional and should only be performed if you want to include the environment defined APP_NAME in your app's display name.
 
 ### **Step 6: Install Pod Dependencies**
 
@@ -137,6 +137,8 @@ For iOS, follow these additional steps:
 - Open Xcode and navigate to your project's **`ios`** folder.
 - In Xcode, select all the font .ttf files that you placed in the **`assets/fonts`** directory under the "Resources" folder.
 - In the right panel, tick the checkbox for all four targets to ensure that the fonts are included in the build.
+
+![docs-4.jpeg](./assets/images/docs-4.jpeg)
 
 ### **Step 5: Update Font Configuration**
 
