@@ -1,4 +1,4 @@
-import AsyncStorage from "@react-native-async-storage/async-storage"
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 export async function loadString(key: string): Promise<string | null> {
   try {
@@ -20,7 +20,7 @@ export async function saveString(key: string, value: string): Promise<boolean> {
 export async function load(key: string): Promise<unknown | null> {
   try {
     const almostThere = await AsyncStorage.getItem(key)
-    return JSON.parse(almostThere || "")
+    return JSON.parse(almostThere || '')
   } catch {
     return null
   }

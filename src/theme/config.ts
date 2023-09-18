@@ -1,4 +1,4 @@
-import { extendTheme } from "native-base";
+import { extendTheme } from 'native-base'
 
 export const theme = extendTheme({
   fontConfig: {
@@ -44,4 +44,4 @@ export const theme = extendTheme({
     body: 'Poppins',
     mono: 'Poppins',
   },
-});
+})
