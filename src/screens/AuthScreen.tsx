@@ -1,3 +1,4 @@
+import React from 'react'
 import { Center, Button, Box, Text } from 'native-base'
 import { AppStackScreenProps } from 'navigators/StackNavigatorData'
 import { useTranslation } from 'react-i18next'

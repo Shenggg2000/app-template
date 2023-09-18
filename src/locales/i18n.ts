@@ -33,7 +33,7 @@ i18next.use(initReactI18next).init({
   },
 })
 
-i18next.services.formatter?.add('myDateFormatter', (value, lng, options) => {
+i18next.services.formatter?.add('myDateFormatter', (value) => {
   return dayjs(value).format('MMMDD, YYYY, dddd HH:mm:ss')
 })
 

@@ -1,3 +1,4 @@
+import React from 'react'
 import { BottomTabScreenProps } from '@react-navigation/bottom-tabs'
 
 export type AppTabParamList = {

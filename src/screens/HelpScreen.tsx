@@ -1,11 +1,12 @@
+import React from 'react'
 import useLoadingOverlay from 'hooks/useLoadingOverlay'
-import { Button, Center, Text } from 'native-base'
+import { Button, Center } from 'native-base'
 import { AppTabScreenProps } from 'navigators/TabNavigatorData'
 import { useTranslation } from 'react-i18next'
 
 interface HelpScreenProps extends AppTabScreenProps<'Help'> {}
 
-const HelpScreen: React.FC<HelpScreenProps> = ({ navigation, route }) => {
+const HelpScreen: React.FC<HelpScreenProps> = () => {
   const { t } = useTranslation()
   const loadingOverlay = useLoadingOverlay()
 

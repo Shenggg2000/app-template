@@ -38,11 +38,15 @@ export async function save(key: string, value: unknown): Promise<boolean> {
 export async function remove(key: string): Promise<void> {
   try {
     await AsyncStorage.removeItem(key)
-  } catch {}
+  } catch (e) {
+    console.log(e)
+  }
 }
 
 export async function clear(): Promise<void> {
   try {
     await AsyncStorage.clear()
-  } catch {}
+  } catch (e) {
+    console.log(e)
+  }
 }

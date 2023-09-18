@@ -1,3 +1,4 @@
+import React from 'react'
 import { IMAGES } from 'constants/images'
 import { Center, Text } from 'native-base'
 import { useTranslation } from 'react-i18next'
@@ -6,7 +7,7 @@ import { AppTabScreenProps } from 'navigators/TabNavigatorData'
 
 interface HelpScreenProps extends AppTabScreenProps<'Home'> {}
 
-const HomeScreen: React.FC<HelpScreenProps> = ({ navigation, route }) => {
+const HomeScreen: React.FC<HelpScreenProps> = () => {
   const { t } = useTranslation()
 
   return (

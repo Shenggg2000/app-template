@@ -1,6 +1,5 @@
 import React from 'react'
-import { Center, Heading, Modal, Spinner } from 'native-base'
-import useLoadingOverlay from 'hooks/useLoadingOverlay'
+import { Heading, Modal, Spinner } from 'native-base'
 import { useTranslation } from 'react-i18next'
 
 interface LoadingOverlayProps {

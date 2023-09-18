@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { NativeBaseProvider, Box } from 'native-base'
+import { NativeBaseProvider } from 'native-base'
 import { NavigationContainer } from '@react-navigation/native'
 import { getLocales } from 'react-native-localize'
 import { useTranslation } from 'react-i18next'
