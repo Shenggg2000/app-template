@@ -79,12 +79,14 @@ Use the following command to rename the app to your preferred name. Replace **`"
 npx react-native-rename "yourappname" --skipGitStatusCheck
 ```
 
-### **Step 6 (Optional): Update iOS App Name (If Needed)**
+### **Step 6 (Optional): Update App Name (If Needed)**
 
 If you want the app name to include the environment name, follow these steps:
 
+******iOS******
+
 - Navigate to **`ios/yourappname/Info.plist`**.
-- Update **CFBundleDisplayName** line 8 from:
+- Update **CFBundleDisplayName** in line 8 from:
 
 ```xml
 <key>CFBundleDisplayName</key>
@@ -96,6 +98,21 @@ to:
 ```xml
 <key>CFBundleDisplayName</key>
 <string>${APP_NAME}</string>
+```
+
+**************Android**************
+
+- Navigate to **`android/app/src/main/res/values/strings.xml`**.
+- Update **app_name** in line 2 from:
+
+```xml
+<string name="app_name">yourappname</string>
+```
+
+to:
+
+```xml
+<string name="app_name">@string/APP_NAME</string>
 ```
 
 This step is optional and should only be performed if you want to include the environment name in your app's display name.

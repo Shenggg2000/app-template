@@ -326,7 +326,6 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
-				8B243CF02AB7E36F0075D31D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -349,7 +348,6 @@
 				8BD3FF392AAFF392007ED7F2 /* Bundle React Native code and images */,
 				8BD3FF3A2AAFF392007ED7F2 /* [CP] Embed Pods Frameworks */,
 				8BD3FF3B2AAFF392007ED7F2 /* [CP] Copy Pods Resources */,
-				8B243CF12AB7E3800075D31D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -372,7 +370,6 @@
 				8BD3FF4C2AAFF3A2007ED7F2 /* Bundle React Native code and images */,
 				8BD3FF4D2AAFF3A2007ED7F2 /* [CP] Embed Pods Frameworks */,
 				8BD3FF4E2AAFF3A2007ED7F2 /* [CP] Copy Pods Resources */,
-				8B243CF22AB7E3870075D31D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -395,7 +392,6 @@
 				8BD3FF5F2AAFF3BD007ED7F2 /* Bundle React Native code and images */,
 				8BD3FF602AAFF3BD007ED7F2 /* [CP] Embed Pods Frameworks */,
 				8BD3FF612AAFF3BD007ED7F2 /* [CP] Copy Pods Resources */,
-				8B243CF32AB7E3920075D31D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -588,78 +584,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-template/Pods-template-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		8B243CF02AB7E36F0075D31D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${SRCROOT}/../node_modules/react-native-config/ios/ReactNativeConfig/BuildXCConfig.rb\" \"${SRCROOT}/..\" \"${SRCROOT}/tmp.xcconfig\"\n";
-		};
-		8B243CF12AB7E3800075D31D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${SRCROOT}/../node_modules/react-native-config/ios/ReactNativeConfig/BuildXCConfig.rb\" \"${SRCROOT}/..\" \"${SRCROOT}/tmp.xcconfig\"\n";
-		};
-		8B243CF22AB7E3870075D31D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${SRCROOT}/../node_modules/react-native-config/ios/ReactNativeConfig/BuildXCConfig.rb\" \"${SRCROOT}/..\" \"${SRCROOT}/tmp.xcconfig\"\n";
-		};
-		8B243CF32AB7E3920075D31D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${SRCROOT}/../node_modules/react-native-config/ios/ReactNativeConfig/BuildXCConfig.rb\" \"${SRCROOT}/..\" \"${SRCROOT}/tmp.xcconfig\"\n";
 		};
 		8BD3FF2F2AAFF392007ED7F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
