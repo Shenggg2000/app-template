@@ -47,7 +47,23 @@ Move into the project folder using the following command:
 cd app-template
 ```
 
-### **Step 3: Install Dependencies**
+### **Step 3: Configure Environment Variables**
+
+Before proceeding, configure your environment variables for each SDLC phase by following these steps:
+
+1. In the root directory of your project, locate the following files:
+    - **`.env.example.dev`**
+    - **`.env.example.qa`**
+    - **`.env.example.uat`**
+    - **`.env.example.prod`**
+2. Rename these files as follows:
+    - **`.env.dev`**
+    - **`.env.qa`**
+    - **`.env.uat`**
+    - **`.env.prod`**
+3. Open each of the renamed **`.env`** files (**`.env.dev`**, **`.env.qa`**, **`.env.uat`**, **`.env.prod`**) and provide the specific environment variables and values relevant to each SDLC phase.
+
+### **Step 4: Install Dependencies**
 
 Install project dependencies using Yarn:
 
@@ -55,7 +71,7 @@ Install project dependencies using Yarn:
 yarn install
 ```
 
-### **Step 4: Rename the App**
+### **Step 5: Rename the App**
 
 Use the following command to rename the app to your preferred name. Replace **`"yourappname"`** with your desired app name:
 
@@ -63,7 +79,7 @@ Use the following command to rename the app to your preferred name. Replace **`"
 npx react-native-rename "yourappname" --skipGitStatusCheck
 ```
 
-### **Step 5 (Optional): Update iOS App Name (If Needed)**
+### **Step 6 (Optional): Update iOS App Name (If Needed)**
 
 If you want the app name to include the environment name, follow these steps:
 
@@ -82,9 +98,9 @@ to:
 <string>${APP_NAME}</string>
 ```
 
-This step is optional and should only be performed if you want to include the environment defined APP_NAME in your app's display name.
+This step is optional and should only be performed if you want to include the environment name in your app's display name.
 
-### **Step 6: Install Pod Dependencies**
+### **Step 7: Install Pod Dependencies**
 
 Install pod dependencies for iOS by running:
 
@@ -92,7 +108,7 @@ Install pod dependencies for iOS by running:
 npx pod-install ios
 ```
 
-### **Step 7: Start Metro Server**
+### **Step 8: Start Metro Server**
 
 Start the Metro server by running:
 
@@ -100,7 +116,7 @@ Start the Metro server by running:
 yarn run start
 ```
 
-### **Step 8: Build and Run the App**
+### **Step 9: Build and Run the App**
 
 Open another terminal window and build the project in the development environment:
 
