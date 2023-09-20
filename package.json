@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "android": "ENVFILE=.env.dev react-native run-android --variant=dev",
+    "android": "ENVFILE=.env.dev react-native run-android",
     "bundle:qa": "ENVFILE=.env.qa react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "bundle:uat": "ENVFILE=.env.uat react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "android:prod": "cd android && ENVFILE=.env.prod ./gradlew assembleRelease",
@@ -42,6 +42,7 @@
     "react-native-safe-area-context": "^4.7.2",
     "react-native-screens": "^3.25.0",
     "react-native-svg": "12.1.1",
+    "react-native-touch-id": "^4.4.1",
     "react-native-vector-icons": "^10.0.0",
     "zustand": "^4.4.1"
   },
