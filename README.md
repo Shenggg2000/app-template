@@ -194,3 +194,5 @@ yarn run ios
 ```
 
 Your React Native project is now configured with your custom font family, giving your app a unique and personalized look. Enjoy the enhanced typography in your application!
+
+## Biometric Authentication
