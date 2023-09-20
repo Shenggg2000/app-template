@@ -84,15 +84,15 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.myapp"
+    namespace "com.template"
 
     defaultConfig {
-        applicationId "com.myapp"
+        applicationId "com.template"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        resValue "string", "build_config_package", "com.myapp"
+        resValue "string", "build_config_package", "com.template"
     }
     signingConfigs {
         debug {
