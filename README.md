@@ -76,7 +76,7 @@ yarn install
 Use the following command to rename the app to your preferred name. Replace **`"yourappname"`** with your desired app name:
 
 ```bash
-npx react-native-rename "yourappname" --skipGitStatusCheck
+npx react-native-rename "yourappname" --skipGitStatusCheck --androidBundleID "com.yourappname"
 ```
 
 ### **Step 6 (Optional): Update App Name (If Needed)**
