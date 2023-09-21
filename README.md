@@ -148,6 +148,10 @@ Open another terminal window and build the project in the development environmen
 yarn run ios
 ```
 
+### **Step 10: Configurate FCM**
+
+Continue with [Firebase Cloud Messaging (FCM) Setup](#firebase-cloud-messaging-fcm-setup)
+
 Now, your React Native project is up and running with the configured environment settings. Happy coding!
 
 ## Custom Fonts
