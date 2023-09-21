@@ -9,22 +9,26 @@ import { theme } from 'theme/config'
 import StackNavigator from 'navigators/StackNavigator'
 import LoadingOverlay from 'components/LoadingOverlay'
 import useLoadingOverlay from 'hooks/useLoadingOverlay'
+import { requestUserNotificationPermission } from 'utils/notification'
 
 const App = () => {
   const { i18n } = useTranslation()
   const loadingOverlay = useLoadingOverlay()
 
   useEffect(() => {
+    // setup FCM service
+    requestUserNotificationPermission()
+    // get user perfer language from system and set to application language
     i18n.changeLanguage(getLocales()[0].languageCode)
   }, [])
 
   return (
-    <NativeBaseProvider theme={theme}>
-      <LoadingOverlay isOpen={loadingOverlay.isOpen} />
-      <NavigationContainer>
+    <NavigationContainer>
+      <NativeBaseProvider theme={theme}>
+        <LoadingOverlay isOpen={loadingOverlay.isOpen} />
         <StackNavigator />
-      </NavigationContainer>
-    </NativeBaseProvider>
+      </NativeBaseProvider>
+    </NavigationContainer>
   )
 }
 

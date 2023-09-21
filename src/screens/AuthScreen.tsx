@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Center, Button, Box, Text, useToast } from 'native-base'
 import { AppStackScreenProps } from 'navigators/StackNavigatorData'
 import { useTranslation } from 'react-i18next'
 import Config from 'react-native-config'
+import { notificationListener } from 'utils/notification'
 import TouchID from 'react-native-touch-id'
 import { Platform } from 'react-native'
 
@@ -11,6 +12,11 @@ interface AuthScreenProps extends AppStackScreenProps<'Auth'> {}
 const AuthScreen: React.FC<AuthScreenProps> = ({ navigation }) => {
   const toast = useToast()
   const { t } = useTranslation()
+
+  useEffect(() => {
+    // if user open app by clicking notification, can redirect to specify screen
+    notificationListener(navigation)
+  }, [])
 
   const startHandler = async () => {
     const isBiometricSupported = await checkBiometricSupport()
