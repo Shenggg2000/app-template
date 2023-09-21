@@ -267,3 +267,5 @@ Once you've completed the initial setup, follow these steps to create a new proj
     
 
 With these steps, you've successfully set up CodePush for your React Native project. You can now leverage CodePush to push updates to your app quickly and efficiently.
+
+## Biometric Authentication
