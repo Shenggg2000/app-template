@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Center, Button, Box, Text } from 'native-base'
 import { AppStackScreenProps } from 'navigators/StackNavigatorData'
 import { useTranslation } from 'react-i18next'
 import Config from 'react-native-config'
+import { notificationListener } from 'utils/notification'
 
 interface AuthScreenProps extends AppStackScreenProps<'Auth'> {}
 
 const AuthScreen: React.FC<AuthScreenProps> = ({ navigation }) => {
   const { t } = useTranslation()
+
+  useEffect(() => {
+    // if user open app by clicking notification, can redirect to specify screen
+    notificationListener(navigation)
+  }, [])
 
   return (
     <Center width='full' height='full'>
